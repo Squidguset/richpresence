@@ -1,0 +1,10 @@
+{
+	"id": "drp",
+	"name": "Discord Rich Presence",
+	"author": "Squidguset",
+	"description": "we made the presence rich idiots" ,
+	"version": "1.0.0",
+	"config": {
+		"enabled": true
+	}
+}
