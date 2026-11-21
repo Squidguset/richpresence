@@ -3,7 +3,7 @@ local lovely_path = false -- This line is patched, don't edit it
 print('pre')
 local ffi = require "ffi"
 print('ffi')
-local discordRPClib = ffi.load(love.filesystem.getRealDirectory(mods['drp'].path.."/discord-rpc.dll"))
+local discordRPClib = ffi.load(lovely_path.."/discord-rpc.dll")
 print('rpc')
 
 ffi.cdef[[

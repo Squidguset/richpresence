@@ -11,10 +11,18 @@ source = "discordRPC.lua"
 before = "main.lua"
 name = "discordrpc"
 
+
+[[patches]]
+[patches.module]
+source = "applicationId.lua"
+before = "main.lua"
+name = "applicationId"
+
+
 [[patches]]
 [patches.pattern]
-target = '=[lovely discordrpc "main.lua"]'
+target = '=[lovely discordrpc "discordRPC.lua"]'
 pattern = "local lovely_path = false -- This line is patched, don't edit it"
 position = "at"
-payload = """local lovely_path = [[{{lovely_hack:patch_dir}}/]]"""
+payload = """local lovely_path = [[{{lovely_hack:patch_dir}}]]"""
 match_indent = true
